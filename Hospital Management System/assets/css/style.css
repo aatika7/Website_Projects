@@ -1,0 +1,264 @@
+body {
+    height: 5000px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.bg_image {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: brightness(0.6);
+    z-index: -1;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+}
+.logo-img img {
+    width: auto;
+    height: 85px;
+    object-fit: contain;
+    transition: 0.5s;
+}
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color:  #d87093;
+}
+
+.navbar a.active {
+    color:  #d87093;
+}
+
+a {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.33px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: #d87093;
+}
+
+
+
+.main-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+#department {
+    cursor: pointer;
+}
+
+#department-img {
+    overflow: hidden;
+}
+
+#department img {
+    width: 100%;
+    height: 250px;
+    border-radius: 0;
+    object-fit: cover;
+    transition: 0.4s ease;
+    filter: grayscale(1);
+}
+
+#department.box-style {
+    border-radius: 0;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+#department.box-style p,
+#department.box-style h3 {
+    padding: 0 32px 32px;
+}
+
+/* Hover effect only on the hovered image */
+#department .card:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+.list-style ul {
+    margin-bottom: 0px;
+    padding-left: 2rem;
+}
+
+.list-style li {
+    padding: 0 0 24px 16px;
+    list-style-image: url(../images/list-icon.svg);
+    margin: auto;
+}
+
+.services-section .container .list-style ul>li:last-child {
+    padding: 0 0 0 16px;
+}
+.doctor-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.doctor-card:hover {
+    transform: translateY(-12px);
+}
+
+.doctor-photo {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.doctor-info {
+    padding: 16px 16px 24px;
+}
+
+.doctor-info a {
+    color: #0473e9;
+    text-decoration: none;
+}
+
+.doctor-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    background-color: #f3f4f6;
+    padding: 50px 0;
+}
+
+.contact-section .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+.contact-section .subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-form button {
+    background-color: #4a4a8f;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3b3b6c;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info a {
+    color: #4a4a8f;
+    font-weight: bold;
+}
+.contact-map .mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 540px;
+}
+
+.contact-map .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 540px;
+    border-radius: 16px;
+}
+
+.contact-map .gmap_iframe {
+    height: 540px !important;
+}
+/* Footer styling */
+/* Footer styling */
+.footer-content {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding for space around content */
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Social media icons container */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    font-size: 24px; /* Icon size */
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color:#d87093; /* Hover color (yellow-orange) */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 15px;
+    }
+
+    .social-icons {
+        margin-top: 5px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+}
