@@ -1,0 +1,256 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+.bg_image {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: brightness(0.6);
+    z-index: -1;
+}
+/* Hover effect for nav links */
+.navbar-nav .nav-link {
+    color: #6c757d; 
+    transition: color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd; 
+    text-decoration: underline; 
+}
+
+/* Keep active link as blue */
+.navbar-nav .nav-link.active {
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.hero-section {
+    position: relative;
+    height: 75vh;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+}
+
+.hover-tab {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-tab:hover {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hover-tab i {
+    transition: color 0.3s ease;
+}
+
+.hover-tab:hover i {
+    color: white;
+}
+
+.btn-dark, .btn-primary {
+    border-radius: 20px;
+}
+
+.btn-dark:hover, .btn-primary:hover {
+    opacity: 0.9;
+}
+
+.radio-section {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-section {
+    margin: -10% auto 0;
+    max-width: 90%;
+}
+
+.form-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.btn-search {
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.btn-search:hover {
+    background-color: #e63946;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .form-section {
+        margin-top: 10%;
+    }
+}
+
+ 
+/* Carousel  */
+/* Card Image Hover Effect */
+.card-img-top {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Stylish Carousel Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%;
+    border: 2px solid #ffffff; /* White border */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+    transform: scale(1.1); /* Slight enlargement */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%; /* Ensure icon is full size */
+}
+
+/* Optional Button Shadow */
+.carousel-control-prev,
+.carousel-control-next {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Add gap between controls and cards */
+.carousel-inner {
+    padding: 20px 0;
+}
+
+
+
+/* Footer  */
+footer {
+    background-color: #f8f9fa; /* Light background */
+    color: #6c757d; /* Muted text */
+  }
+  
+  footer a {
+    color: #6c757d; /* Muted links */
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #343a40; /* Darker color on hover */
+    text-decoration: underline;
+  }
+  
+  footer h6 {
+    font-weight: bold;
+    color: #343a40; /* Dark heading color */
+  }
+  
+  footer ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 8px;
+  }
+  
+  footer .rounded-circle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .bi {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  footer .bi:hover {
+    color: #0d6efd; /* Bootstrap primary color for icons */
+  }
+  
+  footer hr {
+    border-top: 1px solid #dee2e6;
+  }
+  
+  footer .contact-info a {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767.98px) {
+    footer .contact-info a {
+      text-align: center;
+    }
+  
+    footer .d-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer .me-3 {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  

@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    padding-top: 80px; /* Adjust based on the height of your navbar */
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 60px 15px;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  /* Contact Information Styling */
+  .bg-light {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  h3 {
+    color: #007bff;
+    font-weight: 600;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  .bg-light p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  /* Google Maps Frame */
+  iframe {
+    border-radius: 12px;
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Form Styling */
+  form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form .form-control {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  form textarea {
+    resize: none;
+  }
+  
+  form button {
+    background: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    iframe {
+      height: 250px;
+    }
+    
+    .bg-light {
+      text-align: center;
+    }
+    
+    .bg-light p, .bg-light h3 {
+      text-align: center;
+    }
+    
+    form button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    form .form-control {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
